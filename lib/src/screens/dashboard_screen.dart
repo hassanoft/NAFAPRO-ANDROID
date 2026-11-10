@@ -66,7 +66,7 @@ class DashboardScreen extends StatelessWidget {
         const SizedBox(height: 22),
         const Text('Actions rapides', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w800)),
         const SizedBox(height: 12),
-        Row(children: const [
+        const Row(children: [
           Expanded(child: _QuickAction(icon: Icons.add_circle_outline, label: 'Nouvelle facture')),
           SizedBox(width: 10),
           Expanded(child: _QuickAction(icon: Icons.person_add_alt, label: 'Ajouter client')),
@@ -74,9 +74,9 @@ class DashboardScreen extends StatelessWidget {
         const SizedBox(height: 22),
         const Text('Activité récente', style: TextStyle(fontSize: 17, fontWeight: FontWeight.w800)),
         const SizedBox(height: 10),
-        Card(child: Padding(
+        const Card(child: Padding(
           padding: const EdgeInsets.all(18),
-          child: Row(children: const [
+          child: const Row(children: [
             Icon(Icons.inbox_outlined, color: Colors.black38, size: 28),
             SizedBox(width: 12),
             Expanded(child: Text('Aucune activité pour le moment. Créez votre première facture ou ajoutez un client.', style: TextStyle(color: Colors.black54, height: 1.4))),

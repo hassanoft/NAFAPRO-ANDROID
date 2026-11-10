@@ -45,6 +45,9 @@ jobs:
       - name: Analyze Dart code
         run: flutter analyze
 
+      - name: Run Flutter tests
+        run: flutter test
+
       - name: Build release APK
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
